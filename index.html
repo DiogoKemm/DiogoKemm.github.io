@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body onload="scoreboard()">
-        <h1>A game of rock, paper and scissors!</h1>
-        <button value="rock" id="button" onclick="playGame()">Rock</button>
-        <button value="paper" id="button" onclick="playGame()">Paper</button>
-        <button value="scissors" id="button" onclick="playGame()">Scissors</button>
-        <p id="message"></p>
-        <p>Player points: <span id="userPoints"></span></p>
-        <p>Computer points: <span id="PCPoints"></span></p>
-    </body>
-</html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula binomial</title>
+    <script src="binomial.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="n">n: </label>
+        <input type="number" name="n" id="n">
+        <br>
+        <label for="x">x: </label>
+        <input type="number" name="x" id="x">
+        <br>
+        <label for="p">p: </label>
+        <input type="number" name="p" id="p" step="0.1">
+        <br>
+        <input type="button" value="Calcular" id="calcular" onclick="formulaBinomial()">
+    </form>
+    <span id="resultado"></span>
+    
+</body>
