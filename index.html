@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula binomial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="binomial.js"></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="n">n (número de observações)</label>
+            <input type="number" name="n" id="n" min="1">
+        </div>
+        <div>
+            <label for="x">x (número de sucessos)</label>
+            <input type="number" name="x" id="x" min="0">
+        </div>
+        <div>
+            <label for="p">p (probabilidade de sucesso em cada observação)</label>
+            <input type="number" name="p" id="p" step="0.1" min="0" max="1">
+        </div>
+        <input type="button" value="Calcular" id="calcular" onclick="formulaBinomial()">
+    </form>
+    <p>Resultado: <span id="resultado"></span></p>
+    
+</body>

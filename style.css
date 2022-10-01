@@ -1,0 +1,21 @@
+body {
+    font-size: 20px;
+}
+
+form div {
+    margin: 5px;
+}
+
+form input {
+    display: flex;
+    font-size: 19px;
+}
+
+#calcular {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#calcular:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
