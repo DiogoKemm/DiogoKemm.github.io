@@ -9,13 +9,25 @@ function fatorial(num) {
 }
 
 function formulaBinomial() {
-    var n = document.getElementById('n').value;
-    var x = document.getElementById('x').value;
-    var p = document.getElementById('p').value;
-    document.getElementById('resultado').innerHTML = combinatoria(n, x) * (p**x) * ((1 - p)**(n-x)); 
+    let n = document.getElementById('n').value;
+    let x = document.getElementById('x').value;
+    let p = document.getElementById('p').value;
+    let i;
+    let results = 0;
+
+    document.getElementById('teste').innerHTML = x;
+    document.getElementById('teste2').innerHTML = x;
+    document.getElementById('resultado').innerHTML = combinatoria(n, x) * (p**x) * ((1 - p)**(n-x));
+
+    for (i = 0; i<=x; i++) {
+        results += combinatoria(n, i) * (p**i) * ((1 - p)**(n-i));
+    }
+
+    document.getElementById('resultado2').innerHTML = results;    
 }
 
 function combinatoria(n, x) {
     return fatorial(n) / (fatorial(x)*fatorial((n-x)));
 }
+
 
